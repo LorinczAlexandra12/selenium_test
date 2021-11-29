@@ -14,7 +14,7 @@ def get_args():
 if __name__ == '__main__':
     arguments = get_args()
     g = Github(arguments.token)
-    repo = g.get_repo(full_name_or_id='LorinczAlexandra12/selenium_test')
+    repo = g.get_repo(full_name_or_id='LorinczAlexandra12/devops-hw')
     views = repo.get_views_traffic(per="day")
 
     conn = pyodbc.connect('Driver={SQL Server};'
