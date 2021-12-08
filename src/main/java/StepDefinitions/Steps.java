@@ -33,8 +33,7 @@ public class Steps {
 	@Then("^Reset the credentials$")
 	public void Reset_the_credential() throws Throwable
 	{
-		driver.findElement(By.name("btnLogin")).click();
-		driver.findElement(By.name("btnOk")).click();
+		driver.findElement(By.name("btnReset")).click();
 		//System.out.println("This step click on the Reset button.");
 	}
 	
