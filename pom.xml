@@ -23,6 +23,7 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>4.3.1</version>
+	    <scope>main</scope>
         </dependency>
     </dependencies>
 
