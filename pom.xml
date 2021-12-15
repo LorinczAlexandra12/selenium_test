@@ -13,7 +13,6 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
             <version>4.3.1</version>
-	   <scope>main</scope>
         </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -31,6 +30,7 @@
     	    <version>4.11</version>
 	</dependency>
     </dependencies>
+
 
     <properties>
         <maven.compiler.source>9</maven.compiler.source>
