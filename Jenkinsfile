@@ -2,7 +2,13 @@ pipeline{
   
   agent any
   
+  tools { 
+        maven 'Maven 3.3.9' 
+        jdk 'jdk9' 
+    }
+  
   stages{
+    
   
     stage("Init and check out repository"){
       steps{
@@ -16,7 +22,7 @@ pipeline{
     }
     stage("Run tests"){
       steps{
-        mvn clean install
+        sh 'mvn clean install'
       }
     }
     stage("Clean out workspace"){
