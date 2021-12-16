@@ -8,6 +8,12 @@
     <artifactId>CucumberWithSelenium</artifactId>
     <version>1.0-SNAPSHOT</version>
    
+	<properties>
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>9</maven.compiler.source>
+        <maven.compiler.target>9</maven.compiler.target>
+    </properties>
+    
     <dependencies>
         <dependency>
             	<groupId>io.cucumber</groupId>
@@ -75,10 +81,5 @@
     </profile>
 </profiles>
 
-    <properties>
-	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>9</maven.compiler.source>
-        <maven.compiler.target>9</maven.compiler.target>
-    </properties>
     
 </project>
