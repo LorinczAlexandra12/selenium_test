@@ -2,7 +2,13 @@ pipeline{
   
   agent any
   
+  tools {
+        maven 'mymaven'
+        jdk 'JAVA_HOME'
+    }
+  
   stages{
+    
   
     stage("Init and check out repository"){
       steps{
@@ -16,7 +22,7 @@ pipeline{
     }
     stage("Run tests"){
       steps{
-        echo 'Running the tests...'
+        sh 'mvn clean install'
       }
     }
     stage("Clean out workspace"){
