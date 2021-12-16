@@ -16,7 +16,7 @@ pipeline{
     }
     stage("Run tests"){
       steps{
-        echo 'Running the tests...'
+        mvn clean install
       }
     }
     stage("Clean out workspace"){
